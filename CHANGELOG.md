@@ -2,12 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] - 2023-11-05
+## [1.1.0] - 2023-11-05
 
 ### Added
 
 - Added `Middleware` as an abstraction class for controllers and middlewares.
-
 
 ## [1.0.0] - 2023-11-05
 

@@ -1,4 +1,4 @@
-import { MiddlewareInstance as CoreMiddlewareInstance } from '@hero-js/core/src/interfaces/middleware';
+import { MiddlewareInstance as CoreMiddlewareInstance } from '@hero-js/core/dist/interfaces/middleware';
 import { ExpressAdapterGenericTypes } from './router';
 
 export type MiddlewareInstance =
