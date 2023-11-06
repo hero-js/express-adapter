@@ -1,4 +1,5 @@
 import express, { Express, RouterOptions } from 'express';
+import { MiddlewareInstance } from '../interfaces/middleware';
 import {
   NextFunction,
   Request,
@@ -20,7 +21,7 @@ export default class ExpressAdapter {
     this.expressApp = expressApp ?? express();
   }
 
-  private handleResult(result: any, res: Response, middleware?: any) {
+  private handleResult(result: any, res: Response, middleware?: MiddlewareInstance) {
     if (!res.headersSent && result) {
       const responseToSend = middleware
         ? middleware.responseBuilder(result)
@@ -42,8 +43,12 @@ export default class ExpressAdapter {
           ]);
           this.handleResult(result, res);
         } else {
-          const middleware = new MiddlewareClass(router['context']);
-          const classHandler = middleware[handler] as RequestHandlerFunction;
+          const middleware: MiddlewareInstance = new MiddlewareClass({
+            context: router['context'],
+            request: req,
+            response: res,
+          });
+          const classHandler = (middleware as any)[handler] as RequestHandlerFunction;
           middleware.request = req;
           middleware.response = res;
           const result = await classHandler.call(middleware, {
