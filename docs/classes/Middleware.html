@@ -14,14 +14,19 @@
 <ul class="tsd-breadcrumb">
 <li><a href="../modules.html">@hero-js/express-adapter</a></li>
 <li><a href="Middleware.html">Middleware</a></li></ul>
-<h1>Class Middleware<code class="tsd-tag ts-flagAbstract">Abstract</code> </h1></div>
+<h1>Class Middleware&lt;ApiResponse&gt;<code class="tsd-tag ts-flagAbstract">Abstract</code> </h1></div>
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>The Middleware class serves as a model for defining methods that will be used by other middlewares or controllers.
 It includes basic methods like &#39;handler&#39;, which returns the module name of the class,
 and &#39;responseBuilder&#39;, which determines the format of the responses.
 The &#39;handle&#39; method must be implemented, even if it is not necessary in a controller.</p>
 </div>
-<div class="tsd-comment tsd-typography"></div></section>
+<div class="tsd-comment tsd-typography"></div></section> 
+<section class="tsd-panel">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameter-list">
+<li>
+<h4><span class="tsd-kind-type-parameter">ApiResponse</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span> = <span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section> 
 <section class="tsd-panel tsd-hierarchy">
 <h4>Hierarchy</h4>
 <ul class="tsd-hierarchy">
@@ -29,7 +34,7 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <ul class="tsd-hierarchy">
 <li><span class="target">Middleware</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/hero-js/express-adapter/blob/56d9156/src/class/Middleware.ts#L10">src/class/Middleware.ts:10</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/hero-js/express-adapter/blob/792249c/src/class/Middleware.ts#L10">src/class/Middleware.ts:10</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -49,7 +54,7 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <section class="tsd-index-section">
 <h3 class="tsd-index-heading">Methods</h3>
 <div class="tsd-index-list"><a href="Middleware.html#handle" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>handle</span></a>
-<a href="Middleware.html#responseBuilder" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>response<wbr/>Builder</span></a>
+<a href="Middleware.html#responseBuilder" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>response<wbr/>Builder</span></a>
 <a href="Middleware.html#handler" class="tsd-index-link tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>handler</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -57,8 +62,13 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="constructor" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>constructor</span><a href="#constructor" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
-<li class="tsd-signature tsd-anchor-link" id="constructor.new_Middleware"><span class="tsd-kind-constructor-signature">new <wbr/>Middleware</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">__namedParameters</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Middleware.html" class="tsd-signature-type tsd-kind-class">Middleware</a><a href="#constructor.new_Middleware" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<li class="tsd-signature tsd-anchor-link" id="constructor.new_Middleware"><span class="tsd-kind-constructor-signature">new <wbr/>Middleware</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">ApiResponse</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">__namedParameters</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="Middleware.html" class="tsd-signature-type tsd-kind-class">Middleware</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">ApiResponse</span><span class="tsd-signature-symbol">&gt;</span><a href="#constructor.new_Middleware" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
+<section class="tsd-panel">
+<h4>Type Parameters</h4>
+<ul class="tsd-type-parameter-list">
+<li>
+<h4><span class="tsd-kind-type-parameter">ApiResponse</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span> = <span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4></li></ul></section>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
@@ -71,10 +81,10 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <h5><span class="tsd-kind-property">request</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type ">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5></li>
 <li class="tsd-parameter">
 <h5><span class="tsd-kind-property">response</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type ">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5></li></ul></li></ul></div>
-<h4 class="tsd-returns-title">Returns <a href="Middleware.html" class="tsd-signature-type tsd-kind-class">Middleware</a></h4><aside class="tsd-sources">
+<h4 class="tsd-returns-title">Returns <a href="Middleware.html" class="tsd-signature-type tsd-kind-class">Middleware</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">ApiResponse</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <p>Inherited from CoreMiddleware&lt;ExpressAdapterGenericTypes&gt;.constructor</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:8</li></ul></aside></li></ul></section></section>
+<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.4/node_modules/@hero-js/core/dist/class/Middleware.d.ts:8</li></ul></aside></li></ul></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Properties</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="context" class="tsd-anchor"></a>
@@ -82,25 +92,25 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <div class="tsd-signature"><span class="tsd-kind-property">context</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type ">default</span></div><aside class="tsd-sources">
 <p>Inherited from CoreMiddleware.context</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:5</li></ul></aside></section>
+<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.4/node_modules/@hero-js/core/dist/class/Middleware.d.ts:5</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="request" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>request</span><a href="#request" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">request</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type ">Request</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type ">ParamsDictionary</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">ParsedQs</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <p>Inherited from CoreMiddleware.request</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:6</li></ul></aside></section>
+<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.4/node_modules/@hero-js/core/dist/class/Middleware.d.ts:6</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="response" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>response</span><a href="#response" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">response</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type ">Response</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type ">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div><aside class="tsd-sources">
 <p>Inherited from CoreMiddleware.response</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:7</li></ul></aside></section>
+<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.4/node_modules/@hero-js/core/dist/class/Middleware.d.ts:7</li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="moduleName" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <code class="tsd-tag ts-flagOptional">Optional</code> <span>module<wbr/>Name</span><a href="#moduleName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">module<wbr/>Name</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <p>Inherited from CoreMiddleware.moduleName</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:4</li></ul></aside></section></section>
+<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.4/node_modules/@hero-js/core/dist/class/Middleware.d.ts:4</li></ul></aside></section></section>
 <section class="tsd-panel-group tsd-member-group">
 <h2>Methods</h2>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="handle" class="tsd-anchor"></a>
@@ -116,26 +126,28 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4><aside class="tsd-sources">
 <p>Inherited from CoreMiddleware.handle</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:13</li></ul></aside></li></ul></section>
-<section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="responseBuilder" class="tsd-anchor"></a>
+<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.4/node_modules/@hero-js/core/dist/class/Middleware.d.ts:13</li></ul></aside></li></ul></section>
+<section class="tsd-panel tsd-member"><a id="responseBuilder" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>response<wbr/>Builder</span><a href="#responseBuilder" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<ul class="tsd-signatures tsd-is-inherited tsd-is-external">
-<li class="tsd-signature tsd-anchor-link" id="responseBuilder.responseBuilder-1"><span class="tsd-kind-call-signature">response<wbr/>Builder</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">res</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span><a href="#responseBuilder.responseBuilder-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
+<ul class="tsd-signatures">
+<li class="tsd-signature tsd-anchor-link" id="responseBuilder.responseBuilder-1"><span class="tsd-kind-call-signature">response<wbr/>Builder</span><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">response</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">ApiResponse</span><a href="#responseBuilder.responseBuilder-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></li>
 <li class="tsd-description">
-<section class="tsd-panel">
-<h4>Type Parameters</h4>
-<ul class="tsd-type-parameter-list">
-<li>
-<h4><span class="tsd-kind-type-parameter">T</span></h4></li></ul></section>
+<div class="tsd-comment tsd-typography"><p>The &#39;responseBuilder&#39; method determines the format of the responses.</p>
+</div>
 <div class="tsd-parameters">
 <h4 class="tsd-parameters-title">Parameters</h4>
 <ul class="tsd-parameter-list">
 <li>
-<h5><span class="tsd-kind-parameter">res</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span></h5></li></ul></div>
-<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">T</span></h4><aside class="tsd-sources">
-<p>Inherited from CoreMiddleware.responseBuilder</p>
+<h5><span class="tsd-kind-parameter">response</span>: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">ApiResponse</span></h5>
+<div class="tsd-comment tsd-typography"><p>The response.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div></li></ul></div>
+<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type tsd-kind-type-parameter">ApiResponse</span></h4><p>The response.</p>
+
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<p>Overrides CoreMiddleware.responseBuilder</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:15</li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/hero-js/express-adapter/blob/792249c/src/class/Middleware.ts#L18">src/class/Middleware.ts:18</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited tsd-is-external"><a id="handler" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagStatic">Static</code> <span>handler</span><a href="#handler" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited tsd-is-external">
@@ -151,7 +163,7 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <p>Inherited from CoreMiddleware.handler</p>
 <ul>
-<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.2/node_modules/@hero-js/core/dist/class/Middleware.d.ts:14</li></ul></aside></li></ul></section></section></div>
+<li>Defined in node_modules/.pnpm/@hero-js+core@0.1.4/node_modules/@hero-js/core/dist/class/Middleware.d.ts:14</li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -177,7 +189,7 @@ The &#39;handle&#39; method must be implemented, even if it is not necessary in 
 <li><a href="#response" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>response</span></a></li>
 <li><a href="#moduleName" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>module<wbr/>Name</span></a></li>
 <li><a href="#handle" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>handle</span></a></li>
-<li><a href="#responseBuilder" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>response<wbr/>Builder</span></a></li>
+<li><a href="#responseBuilder" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>response<wbr/>Builder</span></a></li>
 <li><a href="#handler" class="tsd-is-inherited tsd-is-external"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2048"></use></svg><span>handler</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../modules.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>@hero-js/express-adapter</span></a>
