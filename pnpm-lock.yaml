@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@hero-js/core':
-    specifier: ^0.1.4
-    version: 0.1.4
+    specifier: ^0.1.6
+    version: 0.1.6
   express:
     specifier: ^4.18.2
     version: 4.18.2
@@ -391,8 +391,8 @@ packages:
     resolution: {integrity: sha512-2jxHfMAJI5P8ZYgF+T8OcCsQiTGoE4iX0rwNiSch2LdHTwRvzD7Q6D7A2Uf3uMq3AtCFpt7Jbjz8lwhFFwX6Pw==}
     dev: false
 
-  /@hero-js/core@0.1.4:
-    resolution: {integrity: sha512-k95yqwTBgr8xp+k2Pf0N2EVFGBsjVl8tfUc3mq4sbzqjRE6ixm8bq1XeoOvpgb3nThxqYGYOx2sMT0RFCDIFrA==}
+  /@hero-js/core@0.1.6:
+    resolution: {integrity: sha512-bH2fn2HBkswLLOetibLSEcGSrqu1HXonnvV2ldQVkrwkb9xDKXkOo0zdOvdKh7Z7lQrLPJqHrrswoVAPjLaqsg==}
     dependencies:
       '@hero-js/context': 1.0.0
       '@hero-js/treegen': 1.0.10
